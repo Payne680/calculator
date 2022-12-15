@@ -8,38 +8,42 @@
   body {
     font-family: "Helvetica Neue", sans-serif;
     margin: 0;
+    width: a;
   }
   
   .calculator {
     background: black;
-    border-radius: 50px;
+    border-radius: 35px;
     color: white;
-    height: 1218px;
-    padding: 20px;
+    padding: 10px;
     position: relative;
-    width: 563px;
+    width: 23%;
+    min-width: 10px;
+    height: 100%;
     margin: auto;
+    resize: both;
+    overflow: auto;
   }
   
   .top-container {
     display: flex;
-    height: 250px;
+    height: 200px;
     justify-content: space-between;
     padding: 0 20px;
   }
   
   .value {
-    font-size: 130px;
-    font-weight: 300;
-    height: 158px;
-    margin-bottom: 20px;
+    font-size: 70px;
+    font-weight: 30;
+    height: 50%;
+    margin-bottom: 2px;
     margin-right: 20px;
     text-align: right;
   }
   
   .buttons-container {
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 1.2rem;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
   }
@@ -51,10 +55,10 @@
     cursor: pointer;
     display: flex;
     font-size: 45px;
-    height: 110px;
+    height: 120%;
     justify-content: center;
     transition: filter .3s;
-    width: 110px;
+    width: 80%;
   }
   
   .button.function {
@@ -70,23 +74,13 @@
     border-radius: 55px;
     grid-column: 1 / span 2;
     justify-content: flex-start;
-    padding-left: 43px;
-    width: 250px;
+    padding-left: 40px;
+    width: 100%;
+    gap: 3px;
   }
   
   .button:active,
   .button:focus {
     filter: brightness(120%);
-  }
-  
-  .bottom {
-    width: 200px;
-    height: 5px;
-    background: white;
-    border-radius: 4px;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
   }
   
