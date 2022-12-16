@@ -155,4 +155,3 @@ decimalEl.addEventListener('click', () => {
     setStrAsValue(currentValueStr + '.')
   }
 })
-
