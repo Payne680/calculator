@@ -1,4 +1,6 @@
 // DOM Elements
+const valueEl = document.querySelector('.value')
+
 const acEl = document.querySelector('.ac')
 const pmEl = document.querySelector('.pm')
 const percentEl = document.querySelector('.percent')
@@ -153,3 +155,4 @@ decimalEl.addEventListener('click', () => {
     setStrAsValue(currentValueStr + '.')
   }
 })
+
